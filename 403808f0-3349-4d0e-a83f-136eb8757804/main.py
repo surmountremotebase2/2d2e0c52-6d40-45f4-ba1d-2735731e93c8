@@ -6,8 +6,7 @@ from surmount.data import Asset
 class TradingStrategy(Strategy):
     def __init__(self):
         # Define the stock ticker you want to trade.
-        self.ticker = "AAPL"
-
+        self.ticker = ["AAPL", 'MSFT']
     @property
     def assets(self):
         # Specify which assets this strategy pertains to.
