@@ -34,7 +34,7 @@ class TradingStrategy(Strategy):
 
             # If the stock has dipped 2% or more, set allocation to 1
             # (i.e., buy and hold the stock)
-            if percentage_dip >= 2:
+            if percentage_dip >= 1:
                 allocation_percentage = 1
 
         # Return the target allocation as a TargetAllocation object. 
